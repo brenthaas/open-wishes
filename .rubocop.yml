@@ -1,0 +1,23 @@
+require:
+  - rubocop-rails
+  - rubocop-rspec
+
+AllCops:
+  Exclude:
+    - "gems/**/*"
+  NewCops: enable
+
+Lint/Debugger:
+  Enabled: True
+
+Style/Documentation:
+  Enabled: False
+
+Style/FrozenStringLiteralComment:
+  Enabled: False
+
+Style/StringLiterals:
+  Enabled: False
+
+Metrics:
+  Enabled: False

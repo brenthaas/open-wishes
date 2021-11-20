@@ -21,7 +21,7 @@ class RegistrationsController < ApplicationController
 
   def logout
     reset_session
-    render json: { logged_out: true, status: 200 }, status: 200
+    render json: { logged_out: true, status: 200 }, status: :ok
   end
 
   private
