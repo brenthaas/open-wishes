@@ -1,0 +1,38 @@
+{
+  "name": "open-wishes-client",
+  "version": "1.0.0",
+  "description": "A unique way to make a wish",
+  "main": "src/index.js",
+  "scripts": {
+    "format": "prettier --write \"src/**/*.{js,jsx}\"",
+    "lint": "eslint \"src/**/*.{js,jsx}\" --quiet",
+    "dev": "parcel src/index.html"
+  },
+  "author": "Brent Haas 1712361+brenthaas@users.noreply.github.com",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "@babel/core": "7.12.16",
+    "@babel/preset-react": "7.12.13",
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-prettier": "^3.4.1",
+    "eslint-plugin-react": "^7.26.1",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "parcel": "^1.12.3",
+    "prettier": "^2.4.1"
+  },
+  "dependencies": {
+    "react": "17.0.1",
+    "react-dom": "17.0.1"
+  },
+  "browserslist": [
+    "last 2 Chrome versions"
+  ],
+  "lint-staged": {
+    "src/**/*.{js,jsx,ts,tsx}": "eslint --fix"
+  }
+}
