@@ -6,13 +6,15 @@
   "scripts": {
     "format": "prettier --write \"src/**/*.{js,jsx}\"",
     "lint": "eslint \"src/**/*.{js,jsx}\" --quiet",
-    "dev": "parcel src/index.html"
+    "dev": "./bin/wepback-dev-server"
   },
   "author": "Brent Haas 1712361+brenthaas@users.noreply.github.com",
   "license": "Apache-2.0",
   "devDependencies": {
     "@babel/core": "7.12.16",
     "@babel/preset-react": "^7.16.0",
+    "@babel/plugin-transform-runtime": "^7.16.4",
+    "babel-loader": "^8.2.3",
     "eslint": "^7.32.0",
     "eslint-config-airbnb": "^18.2.1",
     "eslint-config-airbnb-base": "^14.2.1",
@@ -26,6 +28,7 @@
     "webpack-dev-server": "^3"
   },
   "dependencies": {
+    "@babel/preset-env": "^7.16.4",
     "@rails/webpacker": "5.4.3",
     "babel-plugin-transform-react-remove-prop-types": "^0.4.24",
     "prop-types": "^15.7.2",

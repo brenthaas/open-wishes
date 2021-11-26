@@ -1,5 +1,5 @@
 import { render } from "react-dom";
-import Wish from "./Wish";
+import Wish from "./components/Wish";
 
 const wishes = [
   { wisher: "Luna", title: "Go to dinner" },
@@ -24,4 +24,4 @@ const App = () => {
   );
 };
 
-render(<App />, document.getElementById("root"));
+export default App;
